@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Альфа-Дент | Сильная стоматология</title>
+    <!-- Подключаем CSS отдельным файлом -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Шрифты и иконки -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Кнопка переключения темы (темный/светлый) – плавающая + в хедере -->
+    <div class="theme-switch-wrapper">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Сменить тему">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- MAIN HEADER -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo">
+                <span class="logo-icon"><i class="fas fa-tooth"></i></span>
+                <span class="logo-text">Альфа-<span class="highlight">Дент</span></span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#doctors">Врачи</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#news">Новости</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-phone">
+                <a href="tel:89667222244" class="phone-link"><i class="fas fa-phone-alt"></i> 8 (966) 722-22-44</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Герой-секция с анимацией -->
+        <section id="home" class="hero">
+            <div class="hero-bg-shape"></div>
+            <div class="container hero-content">
+                <div class="hero-text animate-up">
+                    <h1>Улыбка, которая <span class="accent-text">меняет всё</span></h1>
+                    <p>Стоматология премиум-класса в сердце города. Инновационные технологии, индивидуальный подход и безупречный результат.</p>
+                    <div class="hero-doctors">
+                        <span><i class="fas fa-user-md"></i> Магомадов Турпал-али</span>
+                        <span><i class="fas fa-user-md"></i> Джамурзаев Мансур</span>
+                    </div>
+                    <a href="#services" class="btn-primary pulse-btn">Наши услуги <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="hero-image animate-float">
+                    <img src="https://chelyabinsk.stom-firms.ru/app/p/a2/firmPage/main/firmDesign4main/content/covers/1.jpg" alt="Современная стоматология">
+                </div>
+            </div>
+        </section>
+
+        <!-- Акционная секция - яркая анимация -->
+        <section class="promo-banner">
+            <div class="container promo-card">
+                <div class="promo-content">
+                    <div class="promo-tag"><i class="fas fa-gift"></i> ОГРАНИЧЕННОЕ ПРЕДЛОЖЕНИЕ</div>
+                    <h3>Приведи друга — получи 50% скидку</h3>
+                    <p>Друг тоже получает скидку 50% на первый визит! Вместе лечиться выгодно и весело. Акция действует для всех услуг.</p>
+                    <div class="promo-code">ПРОМО-КОД: FRIEND50</div>
+                </div>
+                <div class="promo-icon-bounce">
+                    <i class="fas fa-handshake"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Врачи (Магомадов и Джамурзаев) -->
+        <section id="doctors" class="doctors-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Эксперты</span>
+                    <h2>Ваши улыбки в надёжных руках</h2>
+                    <div class="header-line"></div>
+                </div>
+                <div class="doctors-grid">
+                    <div class="doctor-card zoom-card">
+                        <div class="doctor-image">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Доктор Магомадов">
+                            <div class="doctor-social">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <h3>Магомадов Турпал-али</h3>
+                        <p class="doctor-spec">Главный ортопед, имплантолог</p>
+                        <p class="doctor-desc">Стаж более 12 лет, автор методик безболезненного лечения, член международной ассоциации имплантологов.</p>
+                        <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 5.0</div>
+                    </div>
+                    <div class="doctor-card zoom-card">
+                        <div class="doctor-image">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Доктор Джамурзаев">
+                            <div class="doctor-social">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <h3>Джамурзаев Мансур</h3>
+                        <p class="doctor-spec">Хирург-стоматолог, ортодонт</p>
+                        <p class="doctor-desc">Эксперт по брекет-системам, сложным удалениям и костной пластике. Более 500 успешных операций.</p>
+                        <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 5.0</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Услуги и цены (с картинками) -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Прайс-лист</span>
+                    <h2>Услуги и цены</h2>
+                    <div class="header-line"></div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card glow-card" data-price="3000">
+                        <div class="service-img"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&h=250&fit=crop" alt="Лечение зуба"></div>
+                        <div class="service-info">
+                            <h3><i class="fas fa-tooth"></i> Лечение зуба</h3>
+                            <p>Эндодонтия, восстановление коронковой части, современные материалы.</p>
+                            <div class="price-tag">3 000 ₽</div>
+                        </div>
+                    </div>
+                    <div class="service-card glow-card" data-price="4000">
+                        <div class="service-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ansUI0UW6X37kQFA-CGhuKa8d45VJLX0pw&s" alt="Удаление зуба"></div>
+                        <div class="service-info">
+                            <h3><i class="fas fa-minus-circle"></i> Удаление зуба</h3>
+                            <p>Атравматичное удаление любой сложности, лазерная терапия.</p>
+                            <div class="price-tag">4 000 ₽</div>
+                        </div>
+                    </div>
+                    <div class="service-card glow-card" data-price="2500">
+                        <div class="service-img"><img src="https://dentospas.ru/images/inf/chistka/professionalnaya-chistka-1.jpg" alt="Профессиональная чистка"></div>
+                        <div class="service-info">
+                            <h3><i class="fas fa-brush"></i> Чистка зубов</h3>
+                            <p>AirFlow, ультразвук, полировка, фторирование.</p>
+                            <div class="price-tag">2 500 ₽</div>
+                        </div>
+                    </div>
+                    <div class="service-card glow-card" data-price="20000">
+                        <div class="service-img"><img src="https://dana.spb.ru/wp-content/uploads/2022/05/bone-graft-model.jpg" alt="Импланты"></div>
+                        <div class="service-info">
+                            <h3><i class="fas fa-implant"></i> Импланты</h3>
+                            <p>Nobel Biocare, Straumann, полная интеграция, гарантия.</p>
+                            <div class="price-tag">20 000 ₽</div>
+                        </div>
+                    </div>
+                    <div class="service-card glow-card" data-price="50000">
+                        <div class="service-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS18Y4RK8lo32UJuPBCr343XvX0mGa23Q2MHA&s" alt="Брекеты"></div>
+                        <div class="service-info">
+                            <h3><i class="fas fa-smile-wink"></i> Брекеты</h3>
+                            <p>Керамика, сапфир, металл, полная диагностика и лечение.</p>
+                            <div class="price-tag">50 000 ₽</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок Новости с необычными анимациями -->
+        <section id="news" class="news-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Актуальное</span>
+                    <h2>Новости клиники</h2>
+                    <div class="header-line"></div>
+                </div>
+                <div class="news-carousel">
+                    <div class="news-card flip-card">
+                        <div class="news-inner">
+                            <div class="news-front">
+                                <i class="fas fa-microscope news-icon"></i>
+                                <h3>Цифровая стоматология</h3>
+                                <p class="news-date">12 апреля 2025</p>
+                                <p>Мы внедрили 3D-печать хирургических шаблонов для имплантации с точностью до 20 микрон.</p>
+                            </div>
+                            <div class="news-back">
+                                <p>🔥 Скидка 10% на имплантацию для первых 5 пациентов по новой технологии!</p>
+                                <a href="#" class="readmore">Узнать больше →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card flip-card">
+                        <div class="news-inner">
+                            <div class="news-front">
+                                <i class="fas fa-chalkboard-user news-icon"></i>
+                                <h3>Мастер-класс Мансура</h3>
+                                <p class="news-date">28 марта 2025</p>
+                                <p>Джамурзаев Мансур провёл семинар по безболезненной анестезии и ретракции десны.</p>
+                            </div>
+                            <div class="news-back">
+                                <p>🎓 Врачи получили сертификаты международного образца. Ждем вас на новые процедуры!</p>
+                                <a href="#" class="readmore">Подробнее →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card flip-card">
+                        <div class="news-inner">
+                            <div class="news-front">
+                                <i class="fas fa-hand-holding-heart news-icon"></i>
+                                <h3>Акция: Подари улыбку</h3>
+                                <p class="news-date">5 апреля 2025</p>
+                                <p>Приведи друга и получи скидку 50% на отбеливание — друг тоже получает скидку!</p>
+                            </div>
+                            <div class="news-back">
+                                <p>🤝 Успейте записаться до 20 мая, количество мест ограничено! + бесплатная консультация.</p>
+                                <a href="#" class="readmore">Записаться →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты + адрес -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info animate-slide-left">
+                        <h2>Свяжитесь с нами</h2>
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div><strong>Адрес:</strong> улица Умара Кадырова 21, Грозный</div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-phone-alt"></i>
+                            <div><strong>Телефон:</strong> <a href="tel:89667222244">8 (966) 722-22-44</a></div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <div><strong>Email:</strong> info@alfa-dent.ru</div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-clock"></i>
+                            <div><strong>Время работы:</strong> Пн-Сб 9:00 – 20:00, Вс – по записи</div>
+                        </div>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-map animate-slide-right">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.234567890123!2d45.701637!3d43.318567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4052c0d0123456789%3A0xabcdef123456789!2z0YPQu9C40YbQsCDQo9C80LDRgNCwINCa0LDQtNGL0YDQvtCy0LAgMjE!5e0!3m2!1sru!2sru!4v1712567890123!5m2!1sru!2sru" width="100%" height="250" style="border:0; border-radius: 32px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2025 Альфа-Дент | Стоматология Магомадов Т. и Джамурзаев М. | Все права защищены</p>
+            <p><i class="fas fa-shield-alt"></i> Лицензия ЛО-77-01-123456</p>
+        </div>
+    </footer>
+
+    <script>
+        // ---------- ТЕМНАЯ/СВЕТЛАЯ ТЕМА (с сохранением) ----------
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-theme');
+        }
+        themeToggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            let theme = 'light';
+            if (document.body.classList.contains('dark-theme')) {
+                theme = 'dark';
+            }
+            localStorage.setItem('theme', theme);
+        });
+
+        // ----- Небольшая анимация появления при скролле (дополнительная изюминка) -----
+        const animatedElements = document.querySelectorAll('.service-card, .doctor-card, .news-card, .promo-card, .contact-info, .contact-map');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0px)';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+        animatedElements.forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.1), transform 0.7s ease';
+            observer.observe(el);
+        });
+        // Плавная прокрутка для навигации
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === "#") return;
+                const target = document.querySelector(targetId);
+                if(target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
